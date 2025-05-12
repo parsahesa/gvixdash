@@ -1,0 +1,88 @@
+/* Global RTL Overrides */
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'IRANSans', sans-serif;
+}
+
+/* Menu positioning */
+.vertical-menu {
+    right: 0;
+    left: auto;
+}
+
+/* Adjust main content */
+.main-content {
+    margin-right: 250px;
+    margin-left: 0;
+}
+
+/* Header adjustments */
+.header-item {
+    padding-right: 0;
+    padding-left: 1rem;
+}
+
+/* Dropdown menus */
+.dropdown-menu {
+    text-align: right;
+}
+
+.dropdown-item {
+    text-align: right;
+}
+
+/* Form controls */
+.form-check {
+    padding-right: 1.5rem;
+    padding-left: 0;
+}
+
+.form-check .form-check-input {
+    float: right;
+    margin-right: -1.5rem;
+    margin-left: 0;
+}
+
+/* Tables */
+.table th,
+.table td {
+    text-align: right;
+}
+
+/* HR Dashboard specific */
+.employee-card {
+    text-align: right;
+}
+
+.attendance-status {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+/* Custom HR components */
+.leave-request-status {
+    padding-right: 0;
+    padding-left: 1rem;
+}
+
+.performance-metrics {
+    direction: rtl;
+}
+
+/* Persian calendar adjustments */
+.persian-datepicker {
+    font-family: 'IRANSans', sans-serif;
+    direction: rtl;
+}
+
+/* Bootstrap RTL fixes */
+.mr-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.ml-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}

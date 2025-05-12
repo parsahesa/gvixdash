@@ -1,0 +1,63 @@
+body[dir="rtl"] {
+  font-family: 'Vazirmatn', sans-serif;
+  
+  .sidebar-wrapper {
+    right: 0;
+    left: auto;
+    border-left: 1px solid var(--bs-border-color);
+    border-right: none;
+
+    .sidebar-header {
+      border-left: 1px solid var(--bs-border-color);
+      border-right: none;
+    }
+
+    .metismenu {
+      a {
+        .menu-title {
+          margin-right: 10px;
+          margin-left: 0;
+        }
+      }
+
+      .has-arrow::after {
+        left: 1em;
+        right: auto;
+        transform: rotate(135deg) translate(0, -50%);
+      }
+    }
+  }
+
+  .main-wrapper {
+    margin-right: 260px;
+    margin-left: 0;
+  }
+
+  .top-header .navbar {
+    right: 260px;
+    left: 0;
+  }
+
+  .page-footer {
+    right: 260px;
+    left: 0;
+  }
+
+  // RTL Toggle state
+  &.toggled {
+    .top-header .navbar {
+      right: 70px;
+      left: 0;
+    }
+
+    .main-wrapper {
+      margin-right: 70px;
+      margin-left: 0;
+    }
+
+    .page-footer {
+      right: 70px;
+      left: 0;
+    }
+  }
+}

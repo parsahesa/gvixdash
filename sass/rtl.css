@@ -1,0 +1,87 @@
+/* RTL Support */
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Iran Sans', 'Noto Sans', sans-serif;
+}
+
+.form-label {
+    text-align: right;
+}
+
+.input-group .form-control {
+    border-radius: 0 5px 5px 0 !important;
+}
+
+.input-group .input-group-text {
+    border-radius: 5px 0 0 5px !important;
+}
+
+.ms-2 {
+    margin-right: 0.5rem !important;
+    margin-left: 0 !important;
+}
+
+.me-2 {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+}
+
+.me-auto {
+    margin-left: auto !important;
+    margin-right: unset !important;
+}
+
+.text-start {
+    text-align: right !important;
+}
+
+.text-end {
+    text-align: left !important;
+}
+
+.auth-cover-left {
+    border-right: none !important;
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+.ms-auto {
+    margin-right: auto !important;
+    margin-left: unset !important;
+}
+
+/* Fix dropdown alignment */
+.dropdown-menu {
+    text-align: right;
+    left: auto;
+    right: 0;
+}
+
+/* Fix checkbox alignment */
+.form-check {
+    padding-right: 1.5em;
+    padding-left: 0;
+}
+
+.form-check .form-check-input {
+    float: right;
+    margin-right: -1.5em;
+    margin-left: 0;
+}
+
+/* Fix button icons */
+.btn i {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+/* Fix card borders */
+.border-start {
+    border-right: 1px solid #dee2e6 !important;
+    border-left: none !important;
+}
+
+.border-end {
+    border-left: 1px solid #dee2e6 !important;
+    border-right: none !important;
+}

@@ -1,0 +1,175 @@
+/* RTL Styles */
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+/* Header RTL */
+.navbar-nav {
+    padding-right: 0;
+}
+
+.ms-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+.me-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.top-header .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.dropdown-menu {
+    text-align: right;
+}
+
+.search-bar .position-absolute {
+    left: auto;
+    right: 15px;
+}
+
+/* Sidebar RTL */
+.sidebar-wrapper {
+    right: 0;
+    left: auto;
+}
+
+.sidebar-close {
+    left: 10px;
+    right: auto;
+}
+
+.sidebar-nav .metismenu ul a {
+    padding: 6px 40px 6px 15px;
+}
+
+.sidebar-nav .metismenu a .parent-icon {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.page-wrapper {
+    margin-right: 250px;
+    margin-left: 0;
+}
+
+/* Main Content RTL */
+.main-wrapper {
+    margin-right: 250px;
+    margin-left: 0;
+}
+
+/* Menu Items RTL */
+.metismenu .has-arrow:after {
+    transform: rotate(180deg);
+    left: 1em;
+    right: auto;
+}
+
+/* Breadcrumb RTL */
+.page-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    float: right;
+    padding-left: 0.5rem;
+    padding-right: 0;
+}
+
+/* Cards RTL */
+.card-header {
+    text-align: right;
+}
+
+/* Dropdown menus RTL */
+.dropdown-menu-end {
+    left: 0 !important;
+    right: auto !important;
+}
+
+/* Form Controls RTL */
+.form-control {
+    text-align: right;
+}
+
+/* Icons RTL */
+.material-icons-outlined {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+/* Stats cards RTL */
+.dash-lable {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+/* Progress bars RTL */
+.progress-bar {
+    float: right;
+}
+
+/* Tables RTL */
+.table th,
+.table td {
+    text-align: right;
+}
+
+/* Font Family */
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/vazirmatn/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/vazirmatn/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Custom HR Dashboard Styles */
+.hr-stats-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.hr-stats-card:hover {
+    transform: translateY(-5px);
+}
+
+/* RTL Responsive Fixes */
+@media (max-width: 991px) {
+    .page-wrapper {
+        margin-right: 0;
+    }
+    
+    .sidebar-wrapper {
+        right: -250px;
+    }
+    
+    .sidebar-wrapper.sidebar-open {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .main-wrapper {
+        margin-right: 0;
+    }
+    
+    .sidebar-wrapper {
+        right: -100%;
+        left: auto;
+    }
+    
+    .wrapper.toggled .sidebar-wrapper {
+        right: 0;
+        left: auto;
+    }
+}
